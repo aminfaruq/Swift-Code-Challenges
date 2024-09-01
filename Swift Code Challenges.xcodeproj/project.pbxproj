@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		830A40E02C846A2A007CB0B0 /* Swift_Code_Challenges.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830A40D72C846A2A007CB0B0 /* Swift_Code_Challenges.framework */; };
+		830A40F02C8480A9007CB0B0 /* StringChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A40EF2C8480A9007CB0B0 /* StringChallenges.swift */; };
+		830A40F22C8480D2007CB0B0 /* StringChallenge1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A40F12C8480D2007CB0B0 /* StringChallenge1Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		830A40D72C846A2A007CB0B0 /* Swift_Code_Challenges.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swift_Code_Challenges.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		830A40DF2C846A2A007CB0B0 /* Swift Code ChallengesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Code ChallengesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		830A40EF2C8480A9007CB0B0 /* StringChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringChallenges.swift; sourceTree = "<group>"; };
+		830A40F12C8480D2007CB0B0 /* StringChallenge1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringChallenge1Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		830A40D92C846A2A007CB0B0 /* Swift Code Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				830A40EF2C8480A9007CB0B0 /* StringChallenges.swift */,
 			);
 			path = "Swift Code Challenges";
 			sourceTree = "<group>";
@@ -72,6 +77,7 @@
 		830A40E32C846A2A007CB0B0 /* Swift Code ChallengesTests */ = {
 			isa = PBXGroup;
 			children = (
+				830A40F12C8480D2007CB0B0 /* StringChallenge1Tests.swift */,
 			);
 			path = "Swift Code ChallengesTests";
 			sourceTree = "<group>";
@@ -137,9 +143,11 @@
 				TargetAttributes = {
 					830A40D62C846A2A007CB0B0 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					830A40DE2C846A2A007CB0B0 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -184,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830A40F02C8480A9007CB0B0 /* StringChallenges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830A40F22C8480D2007CB0B0 /* StringChallenge1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +342,7 @@
 		830A40EA2C846A2A007CB0B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -356,6 +367,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -363,6 +375,7 @@
 		830A40EB2C846A2A007CB0B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -394,6 +407,8 @@
 		830A40ED2C846A2A007CB0B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WZB5R9B92Y;
@@ -402,6 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "co.id.aminfaruq.Swift-Code-ChallengesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -409,6 +425,8 @@
 		830A40EE2C846A2A007CB0B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WZB5R9B92Y;
